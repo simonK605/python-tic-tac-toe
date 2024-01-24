@@ -32,3 +32,8 @@ python main.py
 
 ## Contributing
 Feel free to contribute by submitting bug reports, feature requests, or pull requests.
+
+
+## License
+This project is licensed under the MIT License.
+
