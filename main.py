@@ -30,6 +30,16 @@ def game():
 
     while True:
         coords = start(player_x)
+        is_same_coord = False
+        for coord in coords_list:
+            if coord['x'] == coords['x'] and coord['y'] == coords['y']:
+                print("This cell is already occupied. Choose another one!")
+                is_same_coord = True
+                break
+
+        if is_same_coord:
+            continue
+
         coords_list.append(coords)
         print_desk(coords_list)
         player_x = not player_x
